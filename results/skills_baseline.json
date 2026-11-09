@@ -1,0 +1,170 @@
+{
+  "summary": {
+    "clips": 6,
+    "failed": 0,
+    "mean_norm_return": 0.7552225057492459,
+    "step_weighted_norm_return": 0.7333855558045012,
+    "terms": {
+      "motion_global_root_pos": 0.003901167152608157,
+      "motion_global_root_ori": 0.008735133018736815,
+      "motion_body_pos": 0.01850393248129379,
+      "motion_body_ori": 0.012556595394273787,
+      "motion_body_lin_vel": 0.016042514268279375,
+      "motion_body_ang_vel": 0.015589484151597416,
+      "action_rate_l2": -0.0015016082046067413,
+      "joint_limit": -0.0004885901889648818
+    },
+    "mean_full_clip_norm_return": 0.7552225057492459
+  },
+  "clips": [
+    {
+      "name": "gouxiong_duosuomao",
+      "frames": 661,
+      "steps": 661,
+      "norm_return": 0.6613510062582734,
+      "failed": false,
+      "fail_step": -1,
+      "terms": {
+        "motion_global_root_pos": 0.005675591066276793,
+        "motion_global_root_ori": 0.007896053268040182,
+        "motion_body_pos": 0.018139465493622057,
+        "motion_body_ori": 0.011003518068483846,
+        "motion_body_lin_vel": 0.013419213345480038,
+        "motion_body_ang_vel": 0.013191417919164707,
+        "action_rate_l2": -0.0024388478491201705,
+        "joint_limit": -0.0007513364757243515
+      },
+      "full_clip_norm_return": 0.6613510062582734
+    },
+    {
+      "name": "langzi_tiqiu",
+      "frames": 252,
+      "steps": 252,
+      "norm_return": 0.8313294819423129,
+      "failed": false,
+      "fail_step": -1,
+      "terms": {
+        "motion_global_root_pos": 0.007207098461332775,
+        "motion_global_root_ori": 0.008724833291674417,
+        "motion_body_pos": 0.018636608880663676,
+        "motion_body_ori": 0.012852323433709524,
+        "motion_body_lin_vel": 0.018548689191303556,
+        "motion_body_ang_vel": 0.01814726988474528,
+        "action_rate_l2": -0.0008342902338694013,
+        "joint_limit": -0.00014959614250868085
+      },
+      "full_clip_norm_return": 0.8313294819423129
+    },
+    {
+      "name": "shanshenbu",
+      "frames": 359,
+      "steps": 359,
+      "norm_return": 0.8080697126043208,
+      "failed": false,
+      "fail_step": -1,
+      "terms": {
+        "motion_global_root_pos": 0.003951589709204883,
+        "motion_global_root_ori": 0.009511247650826542,
+        "motion_body_pos": 0.019032636392747458,
+        "motion_body_ori": 0.015475057957896284,
+        "motion_body_lin_vel": 0.01703117551245729,
+        "motion_body_ang_vel": 0.017236625915782365,
+        "action_rate_l2": -0.0010121402468189888,
+        "joint_limit": -0.00041918439951447724
+      },
+      "full_clip_norm_return": 0.8080697126043208
+    },
+    {
+      "name": "shanshenbu_combo4",
+      "frames": 2287,
+      "steps": 2287,
+      "norm_return": 0.7499122369430135,
+      "failed": false,
+      "fail_step": -1,
+      "terms": {
+        "motion_global_root_pos": 0.0019780037233180026,
+        "motion_global_root_ori": 0.008959299411948821,
+        "motion_body_pos": 0.018801241709146637,
+        "motion_body_ori": 0.013237017025632737,
+        "motion_body_lin_vel": 0.017010874345826956,
+        "motion_body_ang_vel": 0.016742054114031072,
+        "action_rate_l2": -0.001051087123001826,
+        "joint_limit": -0.0006860038522137374
+      },
+      "full_clip_norm_return": 0.7499122369430135
+    },
+    {
+      "name": "shanshenbu_pro",
+      "frames": 1097,
+      "steps": 1097,
+      "norm_return": 0.6484587538101071,
+      "failed": false,
+      "fail_step": -1,
+      "terms": {
+        "motion_global_root_pos": 0.0038153466682816595,
+        "motion_global_root_ori": 0.008147358785679695,
+        "motion_body_pos": 0.017636967661604625,
+        "motion_body_ori": 0.010855836442305809,
+        "motion_body_lin_vel": 0.013907090902545828,
+        "motion_body_ang_vel": 0.013075751180309758,
+        "action_rate_l2": -0.0023606264710752337,
+        "joint_limit": -0.00023184196451303627
+      },
+      "full_clip_norm_return": 0.6484587538101071
+    },
+    {
+      "name": "yaotou_huangnao",
+      "frames": 521,
+      "steps": 521,
+      "norm_return": 0.8322138429374475,
+      "failed": false,
+      "fail_step": -1,
+      "terms": {
+        "motion_global_root_pos": 0.008638843236180048,
+        "motion_global_root_ori": 0.009523466772859248,
+        "motion_body_pos": 0.0190582275390625,
+        "motion_body_ori": 0.012967230491125652,
+        "motion_body_lin_vel": 0.017722814417159945,
+        "motion_body_ang_vel": 0.016493271957661048,
+        "action_rate_l2": -0.0011414669296791824,
+        "joint_limit": -4.105782225699434e-05
+      },
+      "full_clip_norm_return": 0.8322138429374475
+    }
+  ],
+  "checkpoint": ".candidate.pt",
+  "protocol": "deterministic whole-clip reference tracking",
+  "policy_source": "online",
+  "reference_scope": "checkpoint_data",
+  "data": [
+    {
+      "path": "data/skills/gouxiong_duosuomao.npz",
+      "sha256": "95132094a030fa5cfa69b14f4afcc39839963e201149b485fbae379a845a027d"
+    },
+    {
+      "path": "data/skills/langzi_tiqiu.npz",
+      "sha256": "0ad4e9192aabab1f4fa7da8a8a8a8283d829c7386c2bc2a7e4081a0d60c33100"
+    },
+    {
+      "path": "data/skills/shanshenbu.npz",
+      "sha256": "7d75c0c4e357dbf5f7ef9067c093402da02bc90ab9337bb10d5831fe080ea5d6"
+    },
+    {
+      "path": "data/skills/shanshenbu_combo4.npz",
+      "sha256": "0e3c40062c4b67b215161c7e10882d77a513e11f36b5240ee27731bb1b472f9b"
+    },
+    {
+      "path": "data/skills/shanshenbu_pro.npz",
+      "sha256": "3695c862376221f54cf1494ccdbad26a0a37f7054bac1e6e1a8300817bae59f4"
+    },
+    {
+      "path": "data/skills/yaotou_huangnao.npz",
+      "sha256": "c82b2bf39afb8c895aeb945ff92851e85350724c4426c1b1394967d9a676ebd0"
+    }
+  ],
+  "reward_normalization": {
+    "norm_return": "sum reward / (max step reward * actual survived steps); legacy upstream metric",
+    "full_clip_norm_return": "sum reward / (max step reward * reference frames); zero reward after failure",
+    "native_expected_steps": "frames; original CuboiLeo end counter unchanged"
+  }
+}

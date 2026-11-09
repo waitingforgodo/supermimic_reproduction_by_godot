@@ -1,0 +1,14 @@
+{
+  "sampling": {"horizon_returns": true, "count_warmstart": true, "hard_clip_cap": 0.35},
+  "wm_trainer": {"lr": 0.00002},
+  "policy_trainer": {"lr": 0.000002, "critic_lr": 0.00002},
+  "stability": {"reference_weight": 0.0, "reference_checkpoint": null, "reference_sha256": null},
+  "ema": {"decay": 0.0},
+  "performance": {"replay_index_cache": false, "precision": "fp32", "fused_finite_checks": false},
+  "style_amp": {
+    "weight": 0.25, "history": 10, "hidden": [256, 128], "lr": 0.0001,
+    "batch_size": 256, "updates_per_policy": 1, "gradient_penalty": 5.0,
+    "weight_decay": 0.0003, "logit_regularization": 0.04
+  },
+  "checkpoint_confirmations": 2
+}

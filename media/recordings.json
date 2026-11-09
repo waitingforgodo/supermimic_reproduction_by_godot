@@ -1,0 +1,121 @@
+{
+  "lafan1": {
+    "checkpoint": "models/lafan1/best.pt",
+    "checkpoint_sha256": "e388f1cac51e2bbea0d19b68abf7b337ba543e5e92f5565088cc26228397452f",
+    "policy_source": "online",
+    "recording": "actual deterministic closed-loop policy in MuJoCo Warp; simulation, not hardware",
+    "seed": 0,
+    "control_dt": 0.02,
+    "history": 10,
+    "demonstration_cap_seconds": 12.0,
+    "clips": [
+      {
+        "name": "dance1_subject1",
+        "frames": 600,
+        "reference_frames": 6574,
+        "failure": false,
+        "clip_end": false,
+        "truncated_for_demo": true,
+        "motion_content_sha256": "69fe3f76afbc70d9800baf139a232e85dd4c583435b0e8b683120dbd3556c045"
+      },
+      {
+        "name": "run1_subject2",
+        "frames": 600,
+        "reference_frames": 11891,
+        "failure": false,
+        "clip_end": false,
+        "truncated_for_demo": true,
+        "motion_content_sha256": "4b18c2709c504c0f1c3563531332fefae0659aed849f978a6a18a3a3fffc636b"
+      },
+      {
+        "name": "jumps1_subject1",
+        "frames": 600,
+        "reference_frames": 12222,
+        "failure": false,
+        "clip_end": false,
+        "truncated_for_demo": true,
+        "motion_content_sha256": "4c84c69af11e9e514ead3b88df1b6b2008adcce5f910bca8d27cf7a9c807e4c7"
+      }
+    ],
+    "rendering": {
+      "fps": 25,
+      "width": 960,
+      "height": 540,
+      "gif_fps": 10,
+      "gif_width": 560
+    }
+  },
+  "skills": {
+    "checkpoint": "models/skills/best.pt",
+    "checkpoint_sha256": "7bcc12a0e148a98985829a217724f7e22b9d1c5ae46c2c7448b7b40dd78e3c74",
+    "policy_source": "online",
+    "recording": "actual deterministic closed-loop policy in MuJoCo Warp; simulation, not hardware",
+    "seed": 0,
+    "control_dt": 0.02,
+    "history": 10,
+    "demonstration_cap_seconds": 0.0,
+    "clips": [
+      {
+        "name": "shanshenbu",
+        "frames": 359,
+        "reference_frames": 359,
+        "failure": false,
+        "clip_end": true,
+        "truncated_for_demo": false,
+        "motion_content_sha256": "7d75c0c4e357dbf5f7ef9067c093402da02bc90ab9337bb10d5831fe080ea5d6"
+      },
+      {
+        "name": "shanshenbu_pro",
+        "frames": 1097,
+        "reference_frames": 1097,
+        "failure": false,
+        "clip_end": true,
+        "truncated_for_demo": false,
+        "motion_content_sha256": "3695c862376221f54cf1494ccdbad26a0a37f7054bac1e6e1a8300817bae59f4"
+      },
+      {
+        "name": "shanshenbu_combo4",
+        "frames": 2287,
+        "reference_frames": 2287,
+        "failure": false,
+        "clip_end": true,
+        "truncated_for_demo": false,
+        "motion_content_sha256": "0e3c40062c4b67b215161c7e10882d77a513e11f36b5240ee27731bb1b472f9b"
+      },
+      {
+        "name": "gouxiong_duosuomao",
+        "frames": 661,
+        "reference_frames": 661,
+        "failure": false,
+        "clip_end": true,
+        "truncated_for_demo": false,
+        "motion_content_sha256": "95132094a030fa5cfa69b14f4afcc39839963e201149b485fbae379a845a027d"
+      },
+      {
+        "name": "langzi_tiqiu",
+        "frames": 252,
+        "reference_frames": 252,
+        "failure": false,
+        "clip_end": true,
+        "truncated_for_demo": false,
+        "motion_content_sha256": "0ad4e9192aabab1f4fa7da8a8a8a8283d829c7386c2bc2a7e4081a0d60c33100"
+      },
+      {
+        "name": "yaotou_huangnao",
+        "frames": 521,
+        "reference_frames": 521,
+        "failure": false,
+        "clip_end": true,
+        "truncated_for_demo": false,
+        "motion_content_sha256": "c82b2bf39afb8c895aeb945ff92851e85350724c4426c1b1394967d9a676ebd0"
+      }
+    ],
+    "rendering": {
+      "fps": 25,
+      "width": 960,
+      "height": 540,
+      "gif_fps": 10,
+      "gif_width": 560
+    }
+  }
+}

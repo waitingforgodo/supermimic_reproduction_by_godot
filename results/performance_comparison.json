@@ -1,0 +1,41 @@
+{
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "configuration": "4096 environments, H32, policy batch256, world batch512 x10, same 125000-step parent",
+  "timing_scope": "Update timers include WM and policy/critic internals plus gradient hooks and EMA; exclude collection, post-update full-state checks, save and evaluation. First update excluded; sum corresponding WM and policy/critic timings, then take median of 9 pairs.",
+  "training_segment_scope": "From trainer creation completion to final candidate snapshot copy, before whole-clip evaluation; includes replay warmup and final save, excludes capacity probe, simulator/network construction and evaluation.",
+  "cases": {
+    "baseline": {
+      "result": "recheck/baseline_result.json",
+      "control_steps": 64,
+      "optimizer_updates": 10,
+      "warm_samples": 9,
+      "wm_median_s": 1.0461857710000686,
+      "policy_critic_median_s": 3.5739497360000314,
+      "paired_update_median_s": 4.6201355070001,
+      "training_before_final_eval_s": 55.81894084999999,
+      "torch_peak_gib": 4.614152431488037,
+      "whole_clip_return": 0.8476820706792673,
+      "whole_clip_passed": 40
+    },
+    "bf16_cached": {
+      "result": "bf16_cached_result.json",
+      "control_steps": 64,
+      "optimizer_updates": 10,
+      "warm_samples": 9,
+      "wm_median_s": 0.8825583980000147,
+      "policy_critic_median_s": 3.328459903999999,
+      "paired_update_median_s": 4.174651322000045,
+      "training_before_final_eval_s": 52.39374358599997,
+      "torch_peak_gib": 4.419846057891846,
+      "whole_clip_return": 0.8469530926474992,
+      "whole_clip_passed": 40
+    }
+  },
+  "observed_reduction_pct": {
+    "paired_update_median_s": 9.64223201516685,
+    "training_before_final_eval_s": 6.136263447213041,
+    "torch_peak_gib": 4.211095677511645
+  },
+  "observed_update_rate_increase_pct": 10.671171090442755,
+  "conclusion": "Modest update-time and memory savings in this short test; no score improvement. Single short comparison does not establish long-run convergence or overall wall-clock throughput."
+}

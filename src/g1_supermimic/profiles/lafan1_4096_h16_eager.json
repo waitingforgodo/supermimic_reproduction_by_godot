@@ -1,0 +1,14 @@
+{
+  "data": {"npz_dir": "data/lafan1"},
+  "env": {"num_envs": 4096},
+  "wm_trainer": {"batch_size": 512, "compile": null},
+  "policy_trainer": {"batch_size": 512, "horizon": 16, "compile": null},
+  "model_alignment": {"cached_body_reference": true},
+  "sampling": {"horizon_returns": true},
+  "optimizations": {
+    "actor_input_normalization": true,
+    "critic_input_normalization": true,
+    "world_model_normalization": true,
+    "motion_anchor_ori_b": true
+  }
+}

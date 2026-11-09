@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "godot-supermimic"
+version = "0.1.0"
+description = "Reference-conditioned Unitree G1 tracking with a differentiable world model and BPTT"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md", "licenses/*.txt"]
+authors = [{name = "Godot", email = "waitingforgodo@users.noreply.github.com"}]
+dependencies = [
+  "torch==2.9.1", "mjlab==1.6.0", "mujoco==3.11.0", "mujoco-warp==3.11.0",
+  "warp-lang==1.14.0", "numpy==2.5.4", "scipy==1.18.1", "tensorboard==2.21.0", "tyro==1.0.16", "viser==1.1.1",
+  "imageio-ffmpeg==0.6.0", "Pillow", "pandas==3.0.1"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+g1-supermimic = "g1_supermimic.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+g1_supermimic = ["profiles/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

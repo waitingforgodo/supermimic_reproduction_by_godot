@@ -1,0 +1,202 @@
+{
+  "status": "passed",
+  "date": "2026-11-09",
+  "cpu_unit_tests": {
+    "total": 126,
+    "passed": 124,
+    "skipped": 2
+  },
+  "core_tests": {
+    "passed": 10,
+    "skipped": 14,
+    "skip_scope": "CUDA-only cases; CPU reference conversion exercised with downloaded CSV"
+  },
+  "gpu_training": {
+    "status": "short_run_completed",
+    "num_envs": 16,
+    "horizon": 8,
+    "control_steps": 64,
+    "optimizer_updates": 10,
+    "scope": "Reduced-size wiring validation; not a production throughput measurement"
+  },
+  "gpu_resume": {
+    "status": "passed",
+    "scope": "reduced-size GPU resume smoke; not a production throughput benchmark",
+    "envs": 16,
+    "horizon": 8,
+    "batch_size": 16,
+    "start_iteration": 2000,
+    "final_iteration": 2048,
+    "start_updates": 784,
+    "final_updates": 787,
+    "optimizer_steps": {
+      "wm_opt": {
+        "before": [
+          7840.0
+        ],
+        "after": [
+          7843.0
+        ]
+      },
+      "policy_opt": {
+        "before": [
+          784.0
+        ],
+        "after": [
+          787.0
+        ]
+      },
+      "critic_opt": {
+        "before": [
+          15680.0
+        ],
+        "after": [
+          15740.0
+        ]
+      }
+    },
+    "checkpoint_tensors_finite": true
+  },
+  "actor_export": {
+    "results": [
+      {
+        "model": "lafan1",
+        "samples": 4,
+        "device": "cpu",
+        "action_shape": [
+          4,
+          29
+        ],
+        "max_abs_action_error": 0.0,
+        "bit_identical": true
+      },
+      {
+        "model": "skills",
+        "samples": 4,
+        "device": "cpu",
+        "action_shape": [
+          4,
+          29
+        ],
+        "max_abs_action_error": 0.0,
+        "bit_identical": true
+      }
+    ]
+  },
+  "data_rebuild": {
+    "clip": "walk1_subject1",
+    "source": "pinned 30 Hz CSV",
+    "output_fps": 50.0,
+    "motion_content_sha256": "7d529926c6e29f48ffeb9f45319143c7b58a6310c15d90ff11c01abc18214828",
+    "rebuilt_content_bit_identical": true,
+    "source_path_metadata_excluded": true
+  },
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "gpu_total_mib": 8151.0,
+    "gpu_driver": "573.24",
+    "cpu": "AMD Ryzen 9 8945HX with Radeon Graphics",
+    "visible_logical_cpus": 32,
+    "wsl_visible_memory_gib": 15.265342712402344,
+    "os": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "scope": "Observed machine; WSL-visible memory is not the full host physical RAM; training uses two CPU threads per process"
+  },
+  "wheel": {
+    "built": true,
+    "installed_and_imported_outside_source_tree": true,
+    "core_and_profile_packaged": true,
+    "third_party_licenses_packaged": true,
+    "sha256": "f6d20ff1197bb96aff81a4f135607b3327ae73645da6527af9f7575e9c9d1041"
+  },
+  "media": {
+    "videos": [
+      {
+        "file": "media/lafan1/dance1_subject1.mp4",
+        "frames": 300,
+        "seconds": 12.0,
+        "bytes": 1703259
+      },
+      {
+        "file": "media/lafan1/jumps1_subject1.mp4",
+        "frames": 300,
+        "seconds": 12.0,
+        "bytes": 2161205
+      },
+      {
+        "file": "media/lafan1/run1_subject2.mp4",
+        "frames": 300,
+        "seconds": 12.0,
+        "bytes": 1717515
+      },
+      {
+        "file": "media/lafan1.mp4",
+        "frames": 900,
+        "seconds": 36.0,
+        "bytes": 5580513
+      },
+      {
+        "file": "media/shanshenbu.mp4",
+        "frames": 2591,
+        "seconds": 103.64,
+        "bytes": 17279191
+      },
+      {
+        "file": "media/skills/gouxiong_duosuomao.mp4",
+        "frames": 331,
+        "seconds": 13.24,
+        "bytes": 2109240
+      },
+      {
+        "file": "media/skills/langzi_tiqiu.mp4",
+        "frames": 126,
+        "seconds": 5.04,
+        "bytes": 772547
+      },
+      {
+        "file": "media/skills/shanshenbu.mp4",
+        "frames": 180,
+        "seconds": 7.2,
+        "bytes": 1181889
+      },
+      {
+        "file": "media/skills/shanshenbu_combo4.mp4",
+        "frames": 1144,
+        "seconds": 45.76,
+        "bytes": 7440887
+      },
+      {
+        "file": "media/skills/shanshenbu_pro.mp4",
+        "frames": 549,
+        "seconds": 21.96,
+        "bytes": 4284803
+      },
+      {
+        "file": "media/skills/yaotou_huangnao.mp4",
+        "frames": 261,
+        "seconds": 10.44,
+        "bytes": 1493541
+      }
+    ],
+    "gifs": [
+      {
+        "file": "media/lafan1.gif",
+        "frames": 120,
+        "width": 560,
+        "height": 316,
+        "bytes": 4384782
+      },
+      {
+        "file": "media/shanshenbu.gif",
+        "frames": 72,
+        "width": 560,
+        "height": 316,
+        "bytes": 3097471
+      }
+    ],
+    "recording_metadata": "media/recordings.json"
+  },
+  "publication_scope": "Godot SuperMimic only; no other method trees, private paths or LAFAN arrays in Git",
+  "models": "Complete checkpoints in checksummed Release ZIP assets; all original tensors and optimizer states unchanged",
+  "hardware_control_validated": false,
+  "markdown_links_checked": true
+}

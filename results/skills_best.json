@@ -1,0 +1,216 @@
+{
+  "policy": {
+    "version": 2,
+    "mode": "best_only",
+    "checkpoint": "best.pt",
+    "protocol": "deterministic whole-clip reference tracking",
+    "ranking": [
+      "whole_clip_success_rate",
+      "mean_clip_completion",
+      "mean_full_clip_norm_return"
+    ],
+    "evaluation": "all training clips, fixed seed, independent process; every save point and final save",
+    "scope": "one best checkpoint per run; logs and evaluation reports retained"
+  },
+  "score": [
+    1.0,
+    1.0,
+    0.8382172649279944
+  ],
+  "report": {
+    "summary": {
+      "clips": 6,
+      "failed": 0,
+      "mean_norm_return": 0.8382172649279944,
+      "step_weighted_norm_return": 0.8129920760521862,
+      "terms": {
+        "motion_global_root_pos": 0.005545320947450723,
+        "motion_global_root_ori": 0.009501964815201299,
+        "motion_body_pos": 0.01909919390237214,
+        "motion_body_ori": 0.013876481937675926,
+        "motion_body_lin_vel": 0.01727975213852356,
+        "motion_body_ang_vel": 0.01707655337641132,
+        "action_rate_l2": -0.001041204433816958,
+        "joint_limit": -3.884595922302899e-05
+      },
+      "mean_full_clip_norm_return": 0.8382172649279944
+    },
+    "clips": [
+      {
+        "name": "gouxiong_duosuomao",
+        "frames": 661,
+        "steps": 661,
+        "norm_return": 0.7987878542624515,
+        "failed": false,
+        "fail_step": -1,
+        "terms": {
+          "motion_global_root_pos": 0.008434313688985158,
+          "motion_global_root_ori": 0.009448487170705637,
+          "motion_body_pos": 0.019074044682074243,
+          "motion_body_ori": 0.012396451745199183,
+          "motion_body_lin_vel": 0.015881386899731703,
+          "motion_body_ang_vel": 0.015974222261137393,
+          "action_rate_l2": -0.0012815014857928439,
+          "joint_limit": -4.861925400331413e-05
+        },
+        "full_clip_norm_return": 0.7987878542624516
+      },
+      {
+        "name": "langzi_tiqiu",
+        "frames": 252,
+        "steps": 252,
+        "norm_return": 0.9217763325524707,
+        "failed": false,
+        "fail_step": -1,
+        "terms": {
+          "motion_global_root_pos": 0.00950544694113353,
+          "motion_global_root_ori": 0.009677307000235906,
+          "motion_body_pos": 0.01952128561716231,
+          "motion_body_ori": 0.015758751876770505,
+          "motion_body_lin_vel": 0.019298562927851603,
+          "motion_body_ang_vel": 0.01903964224315825,
+          "action_rate_l2": -0.0005745135602496919,
+          "joint_limit": -4.882698819514305e-05
+        },
+        "full_clip_norm_return": 0.9217763325524707
+      },
+      {
+        "name": "shanshenbu",
+        "frames": 359,
+        "steps": 359,
+        "norm_return": 0.9035239046994691,
+        "failed": false,
+        "fail_step": -1,
+        "terms": {
+          "motion_global_root_pos": 0.009227469771021256,
+          "motion_global_root_ori": 0.009755625366168435,
+          "motion_body_pos": 0.0193376780220393,
+          "motion_body_ori": 0.01614028032775709,
+          "motion_body_lin_vel": 0.018150241926187926,
+          "motion_body_ang_vel": 0.018305931250697058,
+          "action_rate_l2": -0.0005641800447426799,
+          "joint_limit": -6.573802978319212e-07
+        },
+        "full_clip_norm_return": 0.903523904699469
+      },
+      {
+        "name": "shanshenbu_combo4",
+        "frames": 2287,
+        "steps": 2287,
+        "norm_return": 0.8293795033110037,
+        "failed": false,
+        "fail_step": -1,
+        "terms": {
+          "motion_global_root_pos": 0.004329386578932255,
+          "motion_global_root_ori": 0.009636611671597873,
+          "motion_body_pos": 0.019321740220924314,
+          "motion_body_ori": 0.014231357816321703,
+          "motion_body_lin_vel": 0.018077343272287147,
+          "motion_body_ang_vel": 0.018052900520328045,
+          "action_rate_l2": -0.0006731612014103311,
+          "joint_limit": -3.820933339686492e-05
+        },
+        "full_clip_norm_return": 0.8293795033110037
+      },
+      {
+        "name": "shanshenbu_pro",
+        "frames": 1097,
+        "steps": 1097,
+        "norm_return": 0.7055677276583509,
+        "failed": false,
+        "fail_step": -1,
+        "terms": {
+          "motion_global_root_pos": 0.0027863888058101685,
+          "motion_global_root_ori": 0.00900966640809719,
+          "motion_body_pos": 0.01835895388802291,
+          "motion_body_ori": 0.012630292254354917,
+          "motion_body_lin_vel": 0.015245117702153779,
+          "motion_body_ang_vel": 0.014538660631901368,
+          "action_rate_l2": -0.001955041259445705,
+          "joint_limit": -5.7288050760218746e-05
+        },
+        "full_clip_norm_return": 0.7055677276583509
+      },
+      {
+        "name": "yaotou_huangnao",
+        "frames": 521,
+        "steps": 521,
+        "norm_return": 0.8702682670842206,
+        "failed": false,
+        "fail_step": -1,
+        "terms": {
+          "motion_global_root_pos": 0.008573964095161424,
+          "motion_global_root_ori": 0.009755731315393137,
+          "motion_body_pos": 0.019344338986329063,
+          "motion_body_ori": 0.014350058249914715,
+          "motion_body_lin_vel": 0.018260512837064015,
+          "motion_body_ang_vel": 0.017736358056828064,
+          "action_rate_l2": -0.0009821974842196006,
+          "joint_limit": -1.1896480396818977e-05
+        },
+        "full_clip_norm_return": 0.8702682670842206
+      }
+    ],
+    "checkpoint": "models/skills/best.pt",
+    "protocol": "deterministic whole-clip reference tracking",
+    "policy_source": "online",
+    "reference_scope": "checkpoint_data",
+    "data": [
+      {
+        "path": "data/skills/gouxiong_duosuomao.npz",
+        "sha256": "95132094a030fa5cfa69b14f4afcc39839963e201149b485fbae379a845a027d"
+      },
+      {
+        "path": "data/skills/langzi_tiqiu.npz",
+        "sha256": "0ad4e9192aabab1f4fa7da8a8a8a8283d829c7386c2bc2a7e4081a0d60c33100"
+      },
+      {
+        "path": "data/skills/shanshenbu.npz",
+        "sha256": "7d75c0c4e357dbf5f7ef9067c093402da02bc90ab9337bb10d5831fe080ea5d6"
+      },
+      {
+        "path": "data/skills/shanshenbu_combo4.npz",
+        "sha256": "0e3c40062c4b67b215161c7e10882d77a513e11f36b5240ee27731bb1b472f9b"
+      },
+      {
+        "path": "data/skills/shanshenbu_pro.npz",
+        "sha256": "3695c862376221f54cf1494ccdbad26a0a37f7054bac1e6e1a8300817bae59f4"
+      },
+      {
+        "path": "data/skills/yaotou_huangnao.npz",
+        "sha256": "c82b2bf39afb8c895aeb945ff92851e85350724c4426c1b1394967d9a676ebd0"
+      }
+    ],
+    "reward_normalization": {
+      "norm_return": "sum reward / (max step reward * actual survived steps); legacy upstream metric",
+      "full_clip_norm_return": "sum reward / (max step reward * reference frames); zero reward after failure",
+      "native_expected_steps": "frames; original CuboiLeo end counter unchanged"
+    },
+    "selection_validation": {
+      "aggregation": "worst lexicographic score",
+      "runs": 2,
+      "evaluations": [
+        {
+          "path": "it_0002000_updates_0000784.json",
+          "score": [
+            1.0,
+            1.0,
+            0.8382172649279944
+          ]
+        },
+        {
+          "path": "it_0002000_updates_0000784_repeat_2.json",
+          "score": [
+            1.0,
+            1.0,
+            0.8401632037342509
+          ]
+        }
+      ]
+    },
+    "data_hash": "motion_arrays_v1"
+  },
+  "iteration": 2000,
+  "num_updates": 784,
+  "checkpoint": "models/skills/best.pt"
+}

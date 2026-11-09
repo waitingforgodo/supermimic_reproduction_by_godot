@@ -1,0 +1,70 @@
+{
+  "phase": "bf16_cached",
+  "source": "best.pt",
+  "resources": {
+    "min_free_vram_mib": 2130.0,
+    "min_available_ram_gib": 6.753559112548828,
+    "resource_samples": 216,
+    "resource_scope": "whole GPU and WSL, not just this process",
+    "status": "short_run_completed",
+    "error": null,
+    "elapsed_seconds": 225.34267222000005,
+    "last_training_stage": "checkpoint save",
+    "torch_peak_allocated_bytes": 4745773568,
+    "torch_peak_reserved_bytes": 4844421120,
+    "num_envs": 4096,
+    "requested_environment_steps": 320000,
+    "completed_environment_steps": 125064,
+    "completed_updates": 49898,
+    "replay_cache": {
+      "mask_builds": 11,
+      "index_builds": 21,
+      "cache_hits": 90
+    }
+  },
+  "timing": {
+    "world_model": [
+      2.00330556199998,
+      0.930924919000006,
+      0.8638310140000272,
+      0.8825583980000147,
+      0.8461914180000463,
+      0.8842858589999878,
+      0.911564573000021,
+      0.8739300409999942,
+      0.9399086009999564,
+      0.8335655289999977
+    ],
+    "policy_critic": [
+      6.220847588999959,
+      3.608049415000039,
+      3.0985554559999855,
+      3.086012158000017,
+      3.328459903999999,
+      3.16043645000002,
+      3.4617669000000433,
+      3.4925241550000123,
+      3.735025156000006,
+      3.268030460000034
+    ]
+  },
+  "clock": {
+    "start": 314.477204749,
+    "initial_iteration": 125000,
+    "ema_start_updates": 0,
+    "training_before_final_eval_seconds": 52.39374358599997
+  },
+  "candidate_iteration": 125064,
+  "candidate_updates": 49898,
+  "ema_updates": 10,
+  "candidate_score": [
+    1.0,
+    1.0,
+    0.8469530926474992
+  ],
+  "best_score": [
+    1.0,
+    1.0,
+    0.847032243408478
+  ]
+}

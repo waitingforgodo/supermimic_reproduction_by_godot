@@ -1,0 +1,15 @@
+{
+  "device": "cpu",
+  "torch_version": "2.9.1+cu128",
+  "cpu_threads": 2,
+  "batch_size": 1,
+  "samples": 200,
+  "warmup_excluded": 20,
+  "median_ms": 2.49527300002228,
+  "p95_ms": 3.099637000104849,
+  "checkpoint_sha256": "7bcc12a0e148a98985829a217724f7e22b9d1c5ae46c2c7448b7b40dd78e3c74",
+  "history_dim": 930,
+  "transport_goal_dim": 689,
+  "effective_goal_dim": 686,
+  "scope": "Actor forward only, synthetic inputs, shared workstation; no physics/sensors/DDS/actuator deadline claim"
+}

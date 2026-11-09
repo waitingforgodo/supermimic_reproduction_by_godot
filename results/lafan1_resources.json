@@ -1,0 +1,16 @@
+{
+  "min_free_vram_mib": 1585.0,
+  "min_available_ram_gib": 1.8618049621582031,
+  "resource_samples": 41947,
+  "resource_scope": "whole GPU and WSL, not just this process",
+  "status": "short_run_completed",
+  "error": null,
+  "elapsed_seconds": 45095.90139257301,
+  "last_training_stage": "checkpoint save",
+  "torch_peak_allocated_bytes": 4955437056,
+  "torch_peak_reserved_bytes": 5121245184,
+  "num_envs": 4096,
+  "requested_environment_steps": 320000,
+  "completed_environment_steps": 126000,
+  "completed_updates": 50288
+}

@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "scope": "reduced-size GPU resume smoke; not a production throughput benchmark",
+  "envs": 16,
+  "horizon": 8,
+  "batch_size": 16,
+  "start_iteration": 2000,
+  "final_iteration": 2048,
+  "start_updates": 784,
+  "final_updates": 787,
+  "optimizer_steps": {
+    "wm_opt": {
+      "before": [
+        7840.0
+      ],
+      "after": [
+        7843.0
+      ]
+    },
+    "policy_opt": {
+      "before": [
+        784.0
+      ],
+      "after": [
+        787.0
+      ]
+    },
+    "critic_opt": {
+      "before": [
+        15680.0
+      ],
+      "after": [
+        15740.0
+      ]
+    }
+  },
+  "checkpoint_tensors_finite": true
+}

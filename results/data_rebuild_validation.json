@@ -1,0 +1,8 @@
+{
+  "clip": "walk1_subject1",
+  "source": "pinned 30 Hz CSV",
+  "output_fps": 50.0,
+  "motion_content_sha256": "7d529926c6e29f48ffeb9f45319143c7b58a6310c15d90ff11c01abc18214828",
+  "rebuilt_content_bit_identical": true,
+  "source_path_metadata_excluded": true
+}

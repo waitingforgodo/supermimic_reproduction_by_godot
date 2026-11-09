@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "release": "v0.1.0",
+  "models": {
+    "lafan1": {
+      "url": "https://github.com/waitingforgodo/supermimic_reproduction_by_godot/releases/download/v0.1.0/lafan1-best.zip",
+      "archive_sha256": "b3f37ecd61afdcf2efa07c084c642bab76ef494871c56d83a28b507ffac204fe",
+      "archive_bytes": 200002411,
+      "checkpoint_sha256": "e388f1cac51e2bbea0d19b68abf7b337ba543e5e92f5565088cc26228397452f",
+      "checkpoint_bytes": 215830350,
+      "iteration": 125000,
+      "score": [
+        1.0,
+        1.0,
+        0.847032243408478
+      ]
+    },
+    "skills": {
+      "url": "https://github.com/waitingforgodo/supermimic_reproduction_by_godot/releases/download/v0.1.0/skills-best.zip",
+      "archive_sha256": "34d2bebe6dc564efd27f6587cbf3ccf4e54618739a1cf4ba391cf8f7a5e90b8d",
+      "archive_bytes": 200766720,
+      "checkpoint_sha256": "7bcc12a0e148a98985829a217724f7e22b9d1c5ae46c2c7448b7b40dd78e3c74",
+      "checkpoint_bytes": 215713486,
+      "iteration": 2000,
+      "score": [
+        1.0,
+        1.0,
+        0.8382172649279944
+      ]
+    }
+  }
+}

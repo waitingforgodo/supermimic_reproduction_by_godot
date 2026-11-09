@@ -1,0 +1,10 @@
+{
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "gpu_total_mib": 8151.0,
+  "gpu_driver": "573.24",
+  "cpu": "AMD Ryzen 9 8945HX with Radeon Graphics",
+  "visible_logical_cpus": 32,
+  "wsl_visible_memory_gib": 15.265342712402344,
+  "os": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "scope": "Observed machine; WSL-visible memory is not the full host physical RAM; training uses two CPU threads per process"
+}

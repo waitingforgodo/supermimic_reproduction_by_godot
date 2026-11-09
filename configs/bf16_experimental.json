@@ -1,0 +1,4 @@
+{
+  "ema": {"decay": 0.995},
+  "performance": {"replay_index_cache": true, "precision": "bf16", "fused_finite_checks": true}
+}

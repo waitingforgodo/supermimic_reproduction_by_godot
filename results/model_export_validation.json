@@ -1,0 +1,48 @@
+{
+  "models": [
+    {
+      "name": "lafan1",
+      "iteration": 125000,
+      "score": [
+        1.0,
+        1.0,
+        0.847032243408478
+      ],
+      "training_checkpoint_sha256": "67180b19f19551cc1af3904c11c0a48f4802368f2f14c33fbd0db79dcdbe6f72",
+      "published_checkpoint_sha256": "e388f1cac51e2bbea0d19b68abf7b337ba543e5e92f5565088cc26228397452f",
+      "bytes": 215830350,
+      "unchanged_tensors": {
+        "wm": true,
+        "policy": true,
+        "critic": true,
+        "wm_opt": true,
+        "policy_opt": true,
+        "critic_opt": true
+      },
+      "metadata_changes": "portable dataset locations, content hashes and project labels; all tensors preserved"
+    },
+    {
+      "name": "skills",
+      "iteration": 2000,
+      "score": [
+        1.0,
+        1.0,
+        0.8382172649279944
+      ],
+      "training_checkpoint_sha256": "dc75c36eb8f9835b40958ebca78c4b9e6e0543da8c14e4fd78466372ea050af4",
+      "published_checkpoint_sha256": "7bcc12a0e148a98985829a217724f7e22b9d1c5ae46c2c7448b7b40dd78e3c74",
+      "bytes": 215713486,
+      "unchanged_tensors": {
+        "wm": true,
+        "policy": true,
+        "critic": true,
+        "wm_opt": true,
+        "policy_opt": true,
+        "critic_opt": true
+      },
+      "metadata_changes": "portable dataset locations, content hashes and project labels; all tensors preserved"
+    }
+  ],
+  "dataset_hash": "motion_arrays_v1; model-consumed arrays; source-path and ZIP metadata excluded",
+  "legacy_checkpoint_compatibility": "tensor state unchanged; bundled run manifests use portable motion content contracts"
+}

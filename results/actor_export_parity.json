@@ -1,0 +1,26 @@
+{
+  "results": [
+    {
+      "model": "lafan1",
+      "samples": 4,
+      "device": "cpu",
+      "action_shape": [
+        4,
+        29
+      ],
+      "max_abs_action_error": 0.0,
+      "bit_identical": true
+    },
+    {
+      "model": "skills",
+      "samples": 4,
+      "device": "cpu",
+      "action_shape": [
+        4,
+        29
+      ],
+      "max_abs_action_error": 0.0,
+      "bit_identical": true
+    }
+  ]
+}
